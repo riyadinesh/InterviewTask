@@ -1,13 +1,22 @@
-//1
+//1 -  Get the square value of the Remainder from Two numbers. Two numbers are passed as parameters.
+//The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value's square.
+
 function square(num1, num2) {
-  remainder = num1 % num2;
-  result = remainder ** 2;
-  return result;
+  let remainder = num1 % num2;
+  let remainder1 = remainder ** 2;
+  
+  if (remainder1 === 0) {
+    console.log("Values are square.");
+  } else {
+    console.log("Values are not square.");
+  }
 }
 
-console.log("1 - square", square(17, 3));
+square(20, 3);
 
-//2
+//2 -Create a function that takes an array containing only numbers and returns the sum, 
+//the product of the first and last elements. Keep the array index at 5.
+
 const arr11 = [2,'string',8,null,4,5]
  const NumberArr= arr11.filter(Element=>typeof Element ==='number');
  reduce = NumberArr.reduce((a,b)=>
@@ -18,7 +27,8 @@ const arr11 = [2,'string',8,null,4,5]
  );
  
 
-//3
+//3 -Given two numbers, swap the numbers without using the temp variable.
+
 function swap(a, b) {
   a = a + b;
   b = a - b;
@@ -31,7 +41,9 @@ let b = 22;
 console.log("3 - before swap", [a, b]);
 console.log("3  - after swap", swap(a, b));
 
-//4
+//4 - Create a function that takes an array of numbers and 
+//returns both the minimum and maximum numbers, in that order.
+
 function minMax(numbers) {
   let min = numbers[0];
   let max = numbers[0];
@@ -49,7 +61,9 @@ let numbers = [2, 4, 1, 6, 3, 9];
 result = minMax(numbers);
 console.log("4 - min-max", result);
 
-//5
+//5 - Create a function that takes an array of non-negative integers and 
+//strings and returns a new array without the strings.
+
  function nonNegative(arr) {
 let arrnns= arr.filter(Element=>typeof Element ==='string'||'number'&& Element>=0);
   console.log(arrnns);
@@ -64,7 +78,10 @@ let arrnns= arr.filter(Element=>typeof Element ==='string'||'number'&& Element>=
  result3=nonNegative(array11);
  console.log("5 - nonNegative",result3);
 
-//6
+//6 - Create a function that takes two numbers as arguments (num and length) and
+//returns an array of multiples of num until the array length reaches length. 
+ // example: (7, 5) ➞ [7, 14, 21, 28, 35]
+
 function Multiple(num, length) {
   const multiArray = [];
   for (let i = 1; multiArray.length < length; i++) {
@@ -74,7 +91,9 @@ function Multiple(num, length) {
 }
 console.log("6 - multiple", Multiple(7, 5));
 
-//7
+//7 - Considering the above array, write logic to return the value that is incremented by 5.
+//Result array: [12, 19, 26, 33, 40]
+
 
 function incrementLogic(num) {
   const Array = [];
@@ -85,7 +104,8 @@ function incrementLogic(num) {
 }
 console.log("7 - incrementLogic", incrementLogic(5));
 
-//8
+//8 - Write a function to reverse the array and string.
+
 //normal array
 let arr = ["tamil" ,"english" ,"maths" ,"science" ,"social"];
 console.log("8 - normal array", arr);
@@ -98,7 +118,9 @@ let string= "dinesh, kumar"
 newString= string.split('').reverse().join('');
 console.log("8 - string reverse =",newString);
 
-//9
+//9 - Copy the reverse array values to another array without using predefined functions.
+//[12, 19, 26, 33, 40] to [40, 33, 26, 19]
+
 const array = [12, 19, 26, 33, 40]
 const reversedArray = []
 for(let i = array.length - 1; i >= 1; i--) {
@@ -107,7 +129,7 @@ for(let i = array.length - 1; i >= 1; i--) {
 }
 console.log("9 - reverseArray2",reversedArray);
 
-//10
+//10 Write a program to count the array without using functions.
 var size = [12,19,26,33,40]
  function arrayCount(a) {
 var count = 0;
