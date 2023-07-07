@@ -2,17 +2,20 @@
 //The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value's square.
 
 function square(num1, num2) {
-  let remainder = num1 % num2;
-  let remainder1 = remainder ** 2;
-  
-  if (remainder1 === 0) {
-    console.log("Values are square.");
+  remainder = num1 % num2;
+
+  if (remainder == 0) {
+    console.log("Remainder is zero.");
+    result = 0;
   } else {
-    console.log("Values are not square.");
+    result = remainder * remainder;
+    console.log("result is."+ result );
   }
+  result = remainder * remainder;
+  return result;
 }
 
-square(20, 3);
+console.log("1 - square", square(17, 3));
 
 //2 -Create a function that takes an array containing only numbers and returns the sum, 
 //the product of the first and last elements. Keep the array index at 5.
