@@ -102,7 +102,8 @@ function incrementLogic(num) {
   let multiArray = Multiple(7, 5);
   let resultArray = [];
   for (let i = 0; i < 5 ; i++) {
-    resultArray.push(multiArray[i] += 5);
+    multiArray[i] += 5;
+
   }
   return multiArray;
 }
