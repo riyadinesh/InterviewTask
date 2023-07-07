@@ -99,11 +99,12 @@ console.log("6 - multiple", Multiple(7, 5));
 
 
 function incrementLogic(num) {
-  const Array = [];
-  for (let i = 12; Array.length < 5; i++) {
-    Array.push(num += 7);
+  let multiArray = Multiple(7, 5);
+  let resultArray = [];
+  for (let i = 0; i < 5 ; i++) {
+    resultArray.push(multiArray[i] += 5);
   }
-  return Array;
+  return multiArray;
 }
 console.log("7 - incrementLogic", incrementLogic(5));
 
